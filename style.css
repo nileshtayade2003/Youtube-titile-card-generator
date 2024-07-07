@@ -1,0 +1,101 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+}
+.container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    padding: 10px; 
+    border-radius: 10px; 
+    /* background-color: rgb(45, 41, 41); */
+    height: 100px;
+    transition-duration: 0.15s;
+    margin-bottom: 20px;
+}
+
+.card:hover{
+    background-color: rgb(45, 41, 41);
+    cursor: pointer;
+}
+.card .left p{
+    position: relative;
+    bottom: 40px;
+    left: 120px;
+
+    background-color: black;
+    width: 40px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.card .left img{
+    border-radius: 10px;
+}
+
+.right .video-title{
+    margin-top: 5px;
+    font-weight:600;
+    font-size: 17px;
+    color: white;
+}
+
+.right p{
+    color: gray;
+    font-size: 14px;
+}
+
+
+.maincontainer{
+    display: grid;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 500px;
+    margin:10px auto;
+    justify-content: space-between;
+}
+
+#form input{
+    height: 30px;
+    font-size: 15px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+}
+
+#form input:focus{
+    background-color: rgb(171, 160, 160);
+    color:white;
+}
+
+#form button{
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(87, 87, 253);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    transition-duration: 0.15s;
+    cursor: pointer;
+
+}
+#form button:hover{
+    background-color: rgb(65, 65, 244);
+}
